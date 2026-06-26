@@ -1,0 +1,37 @@
+team_name: "Sahil Kumar"
+project_name: "TalentRank / Redrob AI"
+description: >
+  An intelligent candidate discovery and ranking system that scores and ranks
+  candidates from a structured dataset using rule-based scoring, tie-breaking,
+  and honeypot detection — built entirely with Python standard library under
+  strict CPU/RAM/no-network constraints.
+
+language: Python
+python_version: "3.12"
+
+dependencies:
+  - none (standard library only)
+
+constraints:
+  network_access: false
+  cpu_only: true
+  memory_limit: "as specified by competition rules"
+
+entry_point: rank.py
+
+input_format: candidates.jsonl
+output_format: submission.csv
+
+how_to_run: |
+  python rank.py --input candidates.jsonl --out submission.csv
+
+key_features:
+  - Rule-based candidate scoring
+  - Tie-breaking logic for equal scores
+  - Honeypot detection in top results
+  - Runtime and score-range summary stats
+
+author:
+  name: Sahil Kumar
+  github: sahilkumar061030
+  email: sahilkumarverma23@gmail.com
