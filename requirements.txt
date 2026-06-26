@@ -1,0 +1,5 @@
+# Redrob Ranker — Dependencies
+# This ranker uses only Python standard library.
+# No external packages required.
+#
+# Python >= 3.8 recommended.
